@@ -1,0 +1,122 @@
+main {
+    section {
+            @include flex(row, space-around, center);
+    }
+
+    section:first-child {
+        &>div {
+            position: relative;
+            img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            &>div {
+                position: absolute;
+                padding: 30px 0;
+                width: 100%;
+                bottom: 0;
+                text-align: center;
+            
+                a {
+                    background-color: $red;
+                    color: $white;
+                    width: 10px;
+                    padding: 4px 10px;
+                    border-radius: 10px;
+                    font-size: 15px;
+                }
+                h2 {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    padding-top: 5%;
+                }
+            }
+        }
+
+    }
+    section:nth-child(2) {
+        margin: 5vh 0;
+    }
+    section:last-child {
+        margin: 5vh 0;
+    }
+
+    section:nth-child(3){ 
+        margin: 0 10vh;
+        width: 100%;
+        article:first-child {
+            width: 60%;
+            h2 {
+                color: $red;
+                margin: 10px 25px;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            &>div {
+                @include flex(row, center, center);
+                line-height: 3.5vh;
+                img {
+                    margin: 15px 25px;
+                }
+                h5 {
+                    color: $red;
+                    font-weight: bold;
+                }
+                h4 {
+                    font-weight: bold;
+                }
+                div:last-child {
+                    h6 {
+                        color: gray;
+                    }
+                }
+            }
+        }
+        article:last-child {
+            background-color: green;
+            width: 40%;
+            h3 {
+                color: $red;
+                font-weight: bolder;
+                margin: 10px 0;
+            }
+            div:first-child {
+                background-color: yellow;
+                &>div {
+                @include flex(row, start, start);
+                margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    section:nth-last-child(2) {
+        margin: 5% 10%;
+        @include flex(column, center, start);
+        h2 {
+            color: $red;
+            margin: 35px 0;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    } 
+}
+
+
+.facebook {
+	background-color: blue ;
+}
+
+.twitter {
+	background-color: blue;
+}
+
+.googlePlus {
+	background-color: red;
+}
+
+.instagram {
+	background-color: pink;
+}

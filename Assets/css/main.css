@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*
+Projet : Starter CSS
+Author : Thomas Delalbre
+Version : 1.0
+Date: February 2018
+*/
+
+/* -----------------------------------------------------*/
+/* GLOABAL */
+/* -----------------------------------------------------*/
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+	font-size: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	position: relative;
+	height: 100%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+	"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.625em; /*26px*/
+	color: #76787c;
+	background-color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* links */
+/* -----------------------------------------------------*/
+
+a {
+	text-decoration: none;
+	color: #D35F60;
+}
+
+a:active,
+a:hover,
+a:focus {
+	color: #934243;
+}
+
+/* typographie */
+/* -----------------------------------------------------*/
+
+h1, .h1-like, 
+h2, .h2-like, 
+h3, .h3-like, 
+h4, .h4-like, 
+h5, .h5-like, 
+h6, .h6-like {
+	font-weight: 700;
+	color: #1C1F26;
+	margin: 0 0 0.71875em 0;
+	line-height: 1.25em;
+}
+
+h1, .h1-like {
+	font-size: 2em;
+}
+h2, .h2-like {
+	font-size: 1.75em;
+}
+h3, .h3-like {
+	font-size: 1.5em;
+}
+h4, .h4-like {
+	font-size: 1.25em;
+}
+h5, .h5-like {
+	font-size: 1.125em;
+}
+h6, .h6-like {
+	font-size: 1em;
+}
+p {
+	margin: 0 0 0.71875em 0;
+}
+/* Grouping content */
+/*---------------------------------------------------*/
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+
+}
+/* -----------------------------------------------------*/
+/* CONTENT */
+/* -----------------------------------------------------*/
+
