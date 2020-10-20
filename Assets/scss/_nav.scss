@@ -1,0 +1,21 @@
+header {
+    position: relative;
+    width: 100%;
+    @include flex (row, space-between, center);
+    .menu_navBar {
+        width: 100%;
+        padding: 4vh 10vh 0 0;
+        background-color: $blue;
+        .contentMenu {
+            @include flex(row, flex-end, end);
+            li {
+                margin-right: 5vh;
+                font-size: 2vh;
+            }
+            li:hover {
+                color: $orange;
+            }
+        }
+    }
+
+}

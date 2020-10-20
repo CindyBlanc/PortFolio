@@ -1,0 +1,13 @@
+.logo {
+    @include flex(row, center, center);
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    padding-top: 10vh;
+}

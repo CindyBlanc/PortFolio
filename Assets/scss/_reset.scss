@@ -1,0 +1,45 @@
+body {
+	line-height: 1;
+	width: 100%;
+	font-family: "SairaRegular";
+	word-spacing: 2px;
+	margin: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face {
+    font-family: "SairaRegular";
+    src: url(/assets/fonts/Saira_condensed/SairaCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Saira";
+    src: url(/assets/fonts/Saira_condensed/SairaCondensed-SemiBold.ttf);
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.logo h1 {
+	font-family: "Saira";
+	color: #404040;
+	font-size: 20px;
+}
+
