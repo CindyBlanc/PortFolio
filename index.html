@@ -10,6 +10,8 @@
 
 </head>
 <body>
+
+	
 	<div class="loader">
 		<img src="assets/img/Logo2.png" alt="">
 	</div>
@@ -23,7 +25,7 @@
 		</div>
 		<nav class="menu_navBar">
 
-			<div class="navBar">
+			<div id="navBar">
 				<ul class="lien_Menu">
 					<li><a href="#apropos">A Propos</a></li>
 					<li><a href="#competence">Compétences</a></li>
@@ -41,8 +43,8 @@
 			<div class="intro">
 				<i class="icofont-quote-left"></i>
 				<h3>Bonjour,</h3>
-				<div>
-				<p class="event_accueil">Je suis Cindy Blanc, Développeuse Web et Web Mobile </p>
+				<div class="messageAccueil">
+				<p id="event_accueil" data-label="Je suis Cindy Blanc, Développeuse Web et Web Mobile"></p>
 				<i class="icofont-quote-right"></i>
 				</div>
 			</div>
@@ -179,31 +181,29 @@
 							<span class="beforInput">
 								<i class="icofont-paw"></i>
 							</span>
-							<input type="text" name="nom" placeholder="Nom / Prénom" class="formInput formBox">
+							<input type="text" name="nom" placeholder="Nom / Prénom" class="varName formInput formBox">
 						</div>
 						<div class="inputEmail boxInput">
 							<span class="beforInput">
 								<i class="icofont-ui-email"></i>
 							</span>
-							<input type="email" name="email" placeholder="E-mail" class="formInput formBox">
+							<input type="email" name="email" placeholder="E-mail" class="varEmail formInput formBox">
 						</div>
 						<div class="inputPhone boxInput">
 							<span class="beforInput">
 								<i class="icofont-phone"></i>
 							</span>
-							<input type="text" name="tel" placeholder="Téléphone" class="formInput formBox">
+							<input type="text" name="tel" placeholder="Téléphone" class="varTel formInput formBox">
 						</div>
 						<div class="inputCom boxInput">
 							<span class="beforInput">
 								<i class="icofont-speech-comments"></i>
 							</span>
-							<textarea name="message" id="" cols="30" rows="10" placeholder="Votre commentaire" class="formCom formBox"></textarea>
+							<textarea name="message" id="Message" cols="30" rows="10" placeholder="Votre commentaire" class="varCom formCom formBox"></textarea>
 						</div>
 						<div class="inputSubmit">
-							<input type="submit" value="Envoyer" class="inputBtn formBox">
+    						<button type="button" onclick="getValue();" class="inputBtn formBox">Envoyer</button>
 						</div>
-
-					</div>
 				</div>
 			</section>
 
