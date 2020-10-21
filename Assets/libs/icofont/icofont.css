@@ -228,6 +228,11 @@ url("./fonts/icofont.woff") format("woff");
   content: "\e808";
 }
 
+.icofont-phone:before
+{
+  content: "\efbb";
+}
+
 .icofont-xs
 {
   font-size: .5em;

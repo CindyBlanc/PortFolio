@@ -2,12 +2,46 @@ footer {
     width: 100%;
     .contact {
         @include flex(row, space-evenly, center); 
+        margin-bottom: 8%;
+        .formBox {
+            border-radius: 5px;
+            border: 2px solid  rgb(64, 64, 64);
+        }
         .infoContact {
-            width: 30%;
+            width: 40%;
+            margin-left: 10%;
+            .map iframe {
+                width: 100%;
+
+            }
         }
         .boxContact {
-            @include flex(column, center, center);
             width: 50%;
+            margin: 10% 0 0 5%;
+
+            .boxInput {
+                margin: 0 0 15px 20%;
+            }
+            .formInput {
+                width: 70%;
+                height: 40px;
+                vertical-align: middle;
+                background-color: rgba(61, 93, 163, 0.4);
+            }
+            .formCom {
+                width: 70%;
+                height: 200px;
+                background-color: rgba(61, 93, 163, 0.4);
+
+            }
+            .inputSubmit {
+                text-align: center;
+                .inputBtn {
+                    padding: 10px 20px;
+                    background-color: $orange;
+                }
+            }
+
         }
     }
 }

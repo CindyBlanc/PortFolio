@@ -6,14 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  
 	<link rel="stylesheet" href="assets/css/main.min.css">
-	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="stylesheet" href="assets/libs/icofont/icofont.css">
 
 </head>
 <body>
+	<div class="loader">
+		<img src="assets/img/Logo2.png" alt="">
+	</div>
+
 	<header>
 		<div class="logo">
-			<img src="assets/img/Logo1.png" alt="Logo renard">
+			<a href="#accueil">
+			<img class="fox" src="assets/img/Logo1.png" alt="Logo renard"></a>
 			<h1>Cindy Blanc <br> Développeuse Web</h1>
 
 		</div>
@@ -21,10 +25,10 @@
 
 			<div class="navBar">
 				<ul class="lien_Menu">
-					<li><a href="">A Propos</a></li>
-					<li><a href="">Compétences</a></li>
-					<li><a href="">Projets</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#apropos">A Propos</a></li>
+					<li><a href="#competence">Compétences</a></li>
+					<li><a href="#projet">Projets</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -33,26 +37,26 @@
 
 	<main>
 		<!-- Section page d'accueil  -->
-		<section class="accueil">
+		<section id="accueil" class="accueil">
 			<div class="intro">
 				<i class="icofont-quote-left"></i>
 				<h3>Bonjour,</h3>
 				<div>
-				<p>Je suis Cindy Blanc, Développeuse Web et Web Mobile.</p>
+				<p class="event_accueil">Je suis Cindy Blanc, Développeuse Web et Web Mobile </p>
 				<i class="icofont-quote-right"></i>
 				</div>
 			</div>
 		</section>
 
 		<!-- section A propos  -->
-		<section class="aPropos">
-			<h2 class="titreAPropos">Présentation <br> <i class="icofont-hand-drawn-down"></i></h2>
+		<section id="apropos" class="aPropos">
+			<h2 class="titreAPropos"><i class="icofont-hand-drawn-up"></i><br>Présentation <br> <i class="icofont-hand-drawn-down"></i></h2>
 			
 			<div class="contentaPropos">
 				<div class="content1">
 					<p>Cindy Blanc, 31 ans <br> Développeuse Web et Web Mobile</p>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maiores quam alias voluptate sapiente error mollitia rerum quidem fuga. Inventore veniam natus sapiente assumenda quo tenetur dicta rerum, obcaecati rem facilis, laudantium aspernatur odit. Earum repellat assumenda, consectetur veniam perferendis numquam vitae, eligendi nesciunt quis nobis tempore quas dignissimos veritatis.</p>
-					<a href="assets/img/CV.jpg">Mon CV</a>
+					<a href="assets/img/CV.jpg" target="_blank">Mon CV</a>
 				</div>
 				<div class="content2">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, molestias sapiente animi accusamus deleniti repellat voluptates! Corrupti tempora expedita aspernatur?</p>
@@ -62,8 +66,8 @@
 		</section>
 
 		<!-- section sur les compétences -->
-		<section class="competences">
-			<h2>Mes compétences <br><i class="icofont-hand-drawn-down"></i></h2>
+		<section id="competence" class="competences">
+			<h2><i class="icofont-hand-drawn-up"></i><br>Mes compétences <br><i class="icofont-hand-drawn-down"></i></h2>
 
 			<div id="SkillBox">
 			  <div class="SkillBar">
@@ -120,25 +124,28 @@
 		</section>
 
 		<!-- section sur les projets  -->
-		<section class="sectionProjets">
+		<section id="projet" class="sectionProjets">
 
-			<h2>Mes travaux <br> <i class="icofont-hand-drawn-down"></i></h2>
+			<h2><i class="icofont-hand-drawn-up"></i><br>Mes Projets <br> <i class="icofont-hand-drawn-down"></i></h2>
+
+		
 			<div class="projets">
+
 				<div class="boxLeft">
 					<div class="box-img imgProjet1">
-						<img src="assets/img/projet_campus.png" alt="">
+						<img src="assets/img/Projet1.png" alt="">
 					</div>
-					<div class="box-img imgProjet2">
-						<img src="assets/img/Projet_arcLab.png" alt="">
+					<div class="box-img imgProjet3">
+						<img src="assets/img/Projet3.png" alt="">
 					</div>				
 				</div>
 				<div class="boxRight">
-					<div class="box-img imgProjet3">
-						<img src="assets/img/projet_theResto2.PNG" alt="">
+					<div class="box-img imgProjet2">
+						<img src="assets/img/Projet2.png" alt="">
 
 					</div>
 					<div class="box-img imgProjet4">
-						<img src="assets/img/projet_neoTech 2.png" alt="">
+						<img src="assets/img/Projet4.png" alt="">
 
 					</div>
 				</div>
@@ -149,12 +156,12 @@
 
 	<footer>
 			<!-- section Contact  -->
-			<section class="sectionContact">
-				<h2>Me contacter <br> <i class="icofont-hand-drawn-down"></i> </h2>
+			<section id="contact" class="sectionContact">
+				<h2><i class="icofont-hand-drawn-up"></i><br>Me contacter <br> <i class="icofont-hand-drawn-down"></i> </h2>
 				<div class="contact">
 
 					<div class="infoContact">
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi aliquam ut veniam consequatur illo?</p>
+						<p>Un projet, une question ou simplement envie d'échanger autour d'un café ? Envoyez-moi un message</p>
 						<div class="logoRso">
 							<ul>
 								<li><i class="icofont-linkedin"></i></li>
@@ -162,14 +169,40 @@
 								<li></li>
 							</ul>
 						</div>
+						<div class="map formBox">
+							<span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45246.82999803585!2d-0.6211603393394028!3d44.863783435389415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e8f751ca81%3A0x796386037b397a89!2sBordeaux!5e0!3m2!1sfr!2sfr!4v1603278605376!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></span>
+						</div>
 					</div>
 			
 					<div class="boxContact">
-						
-						<input type="name">
-						<input type="email" name="" id="">
-						<input type="text">
-						<input type="submit" name="" id="">
+						<div class="inputName boxInput">
+							<span class="beforInput">
+								<i class="icofont-paw"></i>
+							</span>
+							<input type="text" name="nom" placeholder="Nom / Prénom" class="formInput formBox">
+						</div>
+						<div class="inputEmail boxInput">
+							<span class="beforInput">
+								<i class="icofont-ui-email"></i>
+							</span>
+							<input type="email" name="email" placeholder="E-mail" class="formInput formBox">
+						</div>
+						<div class="inputPhone boxInput">
+							<span class="beforInput">
+								<i class="icofont-phone"></i>
+							</span>
+							<input type="text" name="tel" placeholder="Téléphone" class="formInput formBox">
+						</div>
+						<div class="inputCom boxInput">
+							<span class="beforInput">
+								<i class="icofont-speech-comments"></i>
+							</span>
+							<textarea name="message" id="" cols="30" rows="10" placeholder="Votre commentaire" class="formCom formBox"></textarea>
+						</div>
+						<div class="inputSubmit">
+							<input type="submit" value="Envoyer" class="inputBtn formBox">
+						</div>
+
 					</div>
 				</div>
 			</section>
@@ -177,7 +210,6 @@
 		<p class="finish">Copyright with 💙 by Cindy Blanc - 2020</p>
 
 	</footer>
-
 	<script src="assets/libs/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/dist/scripts.min.js"></script>
 	<script src="assets/js/src/scripts.js"></script>

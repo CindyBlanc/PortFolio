@@ -1,9 +1,6 @@
-
-
-// window.addEventListener("scroll", function() {
-//     let menuArea=document.getElementById("menu_navBar");
-//     console.log(menuArea);
-// });
+$(function() {
+    $(".loader").fadeOut("1000"); 
+});
 
 
 $(function() {
@@ -14,4 +11,5 @@ $(function() {
     });
     
 });
+
 
