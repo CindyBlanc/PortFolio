@@ -4,6 +4,11 @@ body {
 	font-family: "SairaRegular";
 	word-spacing: 2px;
 	margin: 0;
+	background-image: url(/assets/img/bg-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color:  rgb(64, 64, 64);
 }
 ol, ul {
 	list-style: none;

@@ -33,6 +33,11 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
+.icofont-github:before
+{
+  content: "\ed3e";
+}
+
 .icofont-at:before
 {
   content: "\eea6";
@@ -51,6 +56,11 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-close:before
 {
   content: "\eee4";
+}
+
+.icofont-ui-email:before
+{
+  content: "\ec56";
 }
 
 .icofont-email:before
@@ -108,14 +118,14 @@ url("./fonts/icofont.woff") format("woff");
   content: "\f00e";
 }
 
-.icofont-curved-right:before
-{
-  content: "\ea75";
-}
-
 .icofont-curved-left:before
 {
   content: "\ea74";
+}
+
+.icofont-curved-right:before
+{
+  content: "\ea75";
 }
 
 .icofont-arrow-up:before
@@ -133,11 +143,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ea66";
 }
 
-.icofont-hand-drawn-up:before
-{
-  content: "\ea89";
-}
-
 .icofont-hand-drawn-right:before
 {
   content: "\ea88";
@@ -146,6 +151,11 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-hand-drawn-left:before
 {
   content: "\ea87";
+}
+
+.icofont-hand-drawn-up:before
+{
+  content: "\ea89";
 }
 
 .icofont-hand-drawn-down:before
@@ -163,6 +173,11 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ed37";
 }
 
+.icofont-facebook-messenger:before
+{
+  content: "\ed36";
+}
+
 .icofont-instagram:before
 {
   content: "\ed46";
@@ -178,9 +193,9 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ed7a";
 }
 
-.icofont-youtube:before
+.icofont-brand-youtube:before
 {
-  content: "\ed8b";
+  content: "\e95f";
 }
 
 .icofont-paw:before
@@ -198,14 +213,14 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ec55";
 }
 
-.icofont-ui-email:before
-{
-  content: "\ec56";
-}
-
 .icofont-ui-message:before
 {
   content: "\ec67";
+}
+
+.icofont-ui-messaging:before
+{
+  content: "\ec68";
 }
 
 .icofont-dart:before

@@ -1,16 +1,9 @@
 main {
     .accueil {
         width: 100%;
-        height: 70vh;
-        background-image: url(/assets/img/bg-1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 90vh;
         .intro {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translate(0%,-50%);
-            padding: 10% 0 20% 20%;
+            padding: 10% 30% 20% 20%;
             & p {
                 font-size: 60px;
             }
@@ -20,12 +13,20 @@ main {
 
     .aPropos {
         width: 100%;
+        height: 100vh;
         background-image: url(/assets/img/bg-2.jpg);
-        background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: local;
         .contentaPropos {
             @include flex (row, space-evenly, center);
             color: white;
+            font-size: 25px;
+            .content1 {
+                width: 40%;
+            }
+            .content2 {
+                width: 25%;
+            }
 
         }
         
@@ -33,13 +34,24 @@ main {
 
     .competences {
         width: 100%;
+        height: 100vh;
         background-image: url(/assets/img/bg-3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .projets {
-        width: 100%;
-        background-color: aqua;
+    .sectionProjets {
+        .projets {
+            @include flex(row, space-evenly, center);
+            width: 100%;
+        }
+        .box-img {
+            width: 50%;
+        }
+        .box-img img {
+            width: 100%;
+        }
     }
+
 }
+

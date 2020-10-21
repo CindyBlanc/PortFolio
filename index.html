@@ -7,19 +7,20 @@
  
 	<link rel="stylesheet" href="assets/css/main.min.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/libs/icofont/icofont.css">
 
 </head>
 <body>
 	<header>
 		<div class="logo">
-			<img src="assets/img/Logo.png" alt="Logo renard">
+			<img src="assets/img/Logo1.png" alt="Logo renard">
 			<h1>Cindy Blanc <br> Développeuse Web</h1>
 
 		</div>
 		<nav class="menu_navBar">
 
 			<div class="navBar">
-				<ul class="contentMenu">
+				<ul class="lien_Menu">
 					<li><a href="">A Propos</a></li>
 					<li><a href="">Compétences</a></li>
 					<li><a href="">Projets</a></li>
@@ -34,16 +35,19 @@
 		<!-- Section page d'accueil  -->
 		<section class="accueil">
 			<div class="intro">
+				<i class="icofont-quote-left"></i>
 				<h3>Bonjour,</h3>
 				<div>
 				<p>Je suis Cindy Blanc, Développeuse Web et Web Mobile.</p>
+				<i class="icofont-quote-right"></i>
 				</div>
 			</div>
 		</section>
 
 		<!-- section A propos  -->
 		<section class="aPropos">
-			<h2 class="titreAPropos">Présentation</h2>
+			<h2 class="titreAPropos">Présentation <br> <i class="icofont-hand-drawn-down"></i></h2>
+			
 			<div class="contentaPropos">
 				<div class="content1">
 					<p>Cindy Blanc, 31 ans <br> Développeuse Web et Web Mobile</p>
@@ -59,7 +63,7 @@
 
 		<!-- section sur les compétences -->
 		<section class="competences">
-			<h2>Mes compétences</h2>
+			<h2>Mes compétences <br><i class="icofont-hand-drawn-down"></i></h2>
 
 			<div id="SkillBox">
 			  <div class="SkillBar">
@@ -116,25 +120,28 @@
 		</section>
 
 		<!-- section sur les projets  -->
-		<section class="projets">
+		<section class="sectionProjets">
 
-			<h2>Mes travaux</h2>
+			<h2>Mes travaux <br> <i class="icofont-hand-drawn-down"></i></h2>
+			<div class="projets">
+				<div class="boxLeft">
+					<div class="box-img imgProjet1">
+						<img src="assets/img/projet_campus.png" alt="">
+					</div>
+					<div class="box-img imgProjet2">
+						<img src="assets/img/Projet_arcLab.png" alt="">
+					</div>				
+				</div>
+				<div class="boxRight">
+					<div class="box-img imgProjet3">
+						<img src="assets/img/projet_theResto2.PNG" alt="">
 
-			<div class="box-img imgProjet1">
-				<img src="" alt="">
+					</div>
+					<div class="box-img imgProjet4">
+						<img src="assets/img/projet_neoTech 2.png" alt="">
 
-			</div>
-			<div class="box-img imgProjet2">
-				<img src="" alt="">
-
-			</div>
-			<div class="box-img imgProjet3">
-				<img src="" alt="">
-
-			</div>
-			<div class="box-img imgProjet4">
-				<img src="" alt="">
-
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -142,33 +149,37 @@
 
 	<footer>
 			<!-- section Contact  -->
-			<section class="contact">
-				<h2>Me contacter</h2>
+			<section class="sectionContact">
+				<h2>Me contacter <br> <i class="icofont-hand-drawn-down"></i> </h2>
+				<div class="contact">
 
-
-				<div class="infoContact">
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi aliquam ut veniam consequatur illo?</p>
-					<div class="logoRso">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
+					<div class="infoContact">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi aliquam ut veniam consequatur illo?</p>
+						<div class="logoRso">
+							<ul>
+								<li><i class="icofont-linkedin"></i></li>
+								<li><i class="icofont-github"></i></li>
+								<li></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-		
-				<div class="boxContact">
-					<input type="name">
-					<input type="email" name="" id="">
-					<input type="text">
-					<input type="submit" name="" id="">
+			
+					<div class="boxContact">
+						
+						<input type="name">
+						<input type="email" name="" id="">
+						<input type="text">
+						<input type="submit" name="" id="">
+					</div>
 				</div>
 			</section>
 
-		<p>Copyright by Cindy Blanc - 2020</p>
+		<p class="finish">Copyright with 💙 by Cindy Blanc - 2020</p>
 
 	</footer>
 
+	<script src="assets/libs/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/dist/scripts.min.js"></script>
+	<script src="assets/js/src/scripts.js"></script>
 </body>
 </html>

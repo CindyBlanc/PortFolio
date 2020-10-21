@@ -1,11 +1,12 @@
-.footer {
+footer {
     width: 100%;
     .contact {
-        @include flex(row, center, center); 
+        @include flex(row, space-evenly, center); 
         .infoContact {
-            width: 50%;
+            width: 30%;
         }
         .boxContact {
+            @include flex(column, center, center);
             width: 50%;
         }
     }
