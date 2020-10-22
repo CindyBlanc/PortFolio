@@ -4,7 +4,7 @@
     top: 2%;
     left: 2%;
     position: fixed;
-
+    z-index: 9999;
 }
 
 h2 {
@@ -20,10 +20,14 @@ h2 {
 }
 
 .box-img  {
-    width: 100%;
+    width: 90%;
     margin-top: 10vw;
     border-radius: 5px;
     border: 2px solid  rgb(64, 64, 64);
+}
+
+.box-img img {
+    width: 100%;
 }
 
 

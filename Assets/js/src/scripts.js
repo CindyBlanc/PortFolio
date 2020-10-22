@@ -1,48 +1,31 @@
-// Fonction pour le message d'accueil
-// https://webdevpro.net/js-effet-apparition-lettres/
+$(function() {
+  // Fonction pour le message d'accueil
+  // https://safi.me.uk/typewriterjs/
 
-$(function() { 
-  const htmlP = document.getElementById("event_accueil");
-  const txt = htmlP.dataset.label;
-  let i 	= 0 ;
+  var app = document.getElementById('app');
 
-  function showLetters()
-  {
-    let timeOut ;
-    if(i < txt.length)
-    {
-      htmlP.innerHTML += `<span>${txt[i]}</span>` ;
-      timeOut = setTimeout(showLetters,50)
-      i++
-    }
-    else
-    {
-      clearTimeout(timeOut);
-      console.log("end")
-    }
-  };
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile.')
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
+
+
+
+    // Fonction pour la navbar responsive 
+
+    // $("menu_Burger").click(function() {
+    //   $(".lien_Menu_Responsive").slideToggle(1000);
+    // })
 
 
   // Fonction pour le scrolling de la navbar 
 
 
-  // When the user scrolls the page, execute myFunction
-  window.onscroll = function() {myFunction()};
-
-  // Get the navbar
-  var navbar = document.getElementById("menu_navBar");
-
-  // Get the offset position of the navbar
-  var sticky = navbar.offsetTop;
-
-  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
+  // https://www.w3schools.com/howto/howto_js_sticky_header.asp 
 
 
 

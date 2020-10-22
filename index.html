@@ -12,20 +12,31 @@
 <body>
 
 	<header>
-
-		<nav id="menu_navBar">
+		<nav id="NavBar">
 				<ul class="lien_Menu">
 					<li><a href="#apropos">A Propos</a></li>
 					<li><a href="#competence">Compétences</a></li>
 					<li><a href="#projet">Projets</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
-
-				<div class="burger_menu">
-					<a><i class="icofont-navigation-menu"></i></a>
+				<div class="menu_Burger"> 
+					<i class="icofont-navigation-menu"></i>
 				</div>
 		</nav>
-	
+
+		<div class="lien_Menu_Responsive">
+			<ul>
+				<li><a href="#apropos">A Propos</a></li>
+				<li><a href="#competence">Compétences</a></li>
+				<li><a href="#projet">Projets</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>	
+		</div>
+
+
+		
+		
+
 		<div class="logo">
 			<a href="#accueil">
 			<img class="fox" src="assets/img/Logo1.png" alt="Logo renard"></a>
@@ -38,14 +49,16 @@
 
 	<main>
 		<!-- Section page d'accueil  -->
-		<section id="accueil" class="accueil">
+		<section class="accueil">
 			<div class="intro">
 				<i class="icofont-quote-left"></i>
 				<h3>Bonjour,</h3>
 				<div class="messageAccueil">
-				<p id="event_accueil" data-label="Je suis Cindy Blanc, Développeuse Web et Web Mobile. Bonne visite !"></p>
-				<i class="icofont-quote-right"></i>
+					<div id="app"></div>
+					<i class="icofont-quote-right"></i>
 				</div>
+
+
 			</div>
 		</section>
 
@@ -213,6 +226,7 @@
 
 	</footer>
 	<script src="assets/libs/jquery.min.js"></script>
+	<script src=" https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 	<script type="text/javascript" src="assets/js/dist/scripts.min.js"></script>
 	<script src="assets/js/src/scripts.js"></script>
 </body>

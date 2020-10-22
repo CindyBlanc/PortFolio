@@ -1,23 +1,93 @@
+@media screen and (max-width: 1024px) {
+    main {
+        .accueil {
+            height: 60vh;
+        }
+        .aPropos {
+            background-size: cover;
+            height: auto;
+            .titreAPropos {
+                padding-top: 3vh;
+            }
+            .contentaPropos {
+                display: inherit;
+                text-align: center;
+                padding-bottom: 3vh;
+                .content1, .content2 {
+                    width: 90%;
+                    margin: 0 5% 0 5%;
+                }
+            }
+        }
+        .sectionProjets {
+            .projets {
+                flex-direction: column;
+                .boxLeft, .boxRight {
+                    width: 90%;
+                    margin-left: 10%;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .SkillBar {
+        width: 80%;
+    }
+    footer {
+        .contact {
+            .infoContact, .boxContact {
+
+                .formInput, .formCom {
+                    width: 75%;
+                    margin: 0;
+
+                }
+                .boxInput {
+                    margin: 2vh 0 0 0;
+                }
+            }
+        }
+    }
+    
+}
+
 @media screen and (max-width: 780px) {
     header {
-        #menu_navBar {
+        #NavBar {
+
+            padding-bottom: 13vh;
             .lien_Menu {
                 display: none;
             }
-            // .burger_menu {
-            //     width: 100%;
-            //     display: inherit;
-            //     position: relative;
-            //     right: 0;
-            // }
+            .menu_Burger {
+                display: inherit;
+                position: absolute;
+                top: 2vh;
+                right: 2vh;
+                font-size: 8vh;
+            }
+        
         }
 
 
     }
     main {
-        .sectionProjets {
-            .projets {
-                @include flex(column, center, center);
+
+    }
+    footer {
+        .contact {
+            flex-direction: column;
+            .infoContact, .boxContact {
+                width: 90%;
+                margin-left: 0;
+                .formInput, .formCom {
+                    width: 90%;
+                    margin: 0;
+
+                }
+                .boxInput {
+                    margin: 2vh 0 0 0;
+                }
             }
         }
     }

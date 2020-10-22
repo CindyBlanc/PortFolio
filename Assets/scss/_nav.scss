@@ -1,37 +1,31 @@
 header {
-    position: relative;
-    width: 100%;
-    #menu_navBar {
-        position: relative;
-        bottom: 0;
+    #NavBar {
+        background-color: rgba(61, 93, 163, 0.9);
         width: 100%;
-        padding: 5vh 10vh 0 0;
-        background-color: $blue;
+        position: fixed;
+        z-index: 9000;
+        padding-top: 4vh;
+        .menu_Burger {
+            display: none;
+        }
+
         .lien_Menu {
-            @include flex(row, flex-end, end);
-            padding: 14px;
+            @include flex(row, flex-end, baseline);
+            font-size: 24px;
+            width: 100%;
             li {
-                margin-right: 5vh;
-                font-size: 2vh;
+                margin-right: 10vh;
             }
             li:hover {
                 color: $orange;
-                font-size: 25px;
+                font-weight: bold;   
             }
         }
-        .burger_menu {
-            width: 100%;
-            // display: none;
-        }
     }
-    #stickyNav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        padding: 5vh 10vh 0 0;
-        background-color: $blue;
-    }
+    .lien_Menu_Responsive {
+        display: none;
 
+    }
 
 }
 

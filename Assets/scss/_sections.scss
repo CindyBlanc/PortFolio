@@ -2,10 +2,13 @@ main {
     .accueil {
         width: 100%;
         height: 90vh;
+        padding-top: 20vh;
+
         .intro {
-            padding: 10% 0% 20% 20%;
-            & p {
-                font-size: 60px;
+            padding: 10%;
+            width: 60%;
+            #app {
+                font-size: 50px;
             }
         }
 
