@@ -17,15 +17,13 @@ typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile.')
 
     // Fonction pour la navbar responsive 
 
-    // $("menu_Burger").click(function() {
-    //   $(".lien_Menu_Responsive").slideToggle(1000);
-    // })
 
-
+  $(".lien_Menu_Responsive").hide();
+    $(".menu_Burger").click(function() {
+    $(".lien_Menu_Responsive").slideToggle("slow");
+    });
+  
   // Fonction pour le scrolling de la navbar 
-
-
-  // https://www.w3schools.com/howto/howto_js_sticky_header.asp 
 
 
 
@@ -37,9 +35,4 @@ typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile.')
       
     }); 
  
-   
-  // Fonction changement de couleur à un changement de scroll 
-  
-
-
 });

@@ -54,7 +54,6 @@
 @media screen and (max-width: 780px) {
     header {
         #NavBar {
-
             padding-bottom: 13vh;
             .lien_Menu {
                 display: none;
@@ -66,14 +65,11 @@
                 right: 2vh;
                 font-size: 8vh;
             }
-        
+       
         }
-
-
+        
     }
-    main {
 
-    }
     footer {
         .contact {
             flex-direction: column;

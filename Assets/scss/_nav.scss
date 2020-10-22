@@ -24,9 +24,13 @@ header {
     }
     .lien_Menu_Responsive {
         display: none;
-
+        position: relative;
+        top: 10vh;
+        width: 100%;text-align: center;
+        font-size: 40px;
+        line-height: 18vh;
+        
     }
-
 }
 
 
