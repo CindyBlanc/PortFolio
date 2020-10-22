@@ -10,6 +10,19 @@ footer {
         .infoContact {
             width: 40%;
             margin-left: 10%;
+            p {
+                text-align: center;
+                font-size: 30px;
+            }
+            .logoRso ul {
+                @include flex(row, center, center);
+                font-size: 30px;
+                color: $blue;
+                li {
+                    cursor: pointer;
+                }
+
+            }
             .map iframe {
                 width: 100%;
 
@@ -32,13 +45,14 @@ footer {
                 width: 70%;
                 height: 200px;
                 background-color: rgba(61, 93, 163, 0.4);
-
+                resize: none;
             }
             .inputSubmit {
                 text-align: center;
                 .inputBtn {
                     padding: 10px 20px;
                     background-color: $orange;
+                    cursor: pointer;
                 }
             }
 

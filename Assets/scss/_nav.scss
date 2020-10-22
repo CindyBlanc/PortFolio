@@ -1,23 +1,43 @@
 header {
     position: relative;
     width: 100%;
-    @include flex (row, space-between, center);
-    .menu_navBar {
+    #menu_navBar {
         position: relative;
-        top: 90vh;
+        bottom: 0;
         width: 100%;
         padding: 5vh 10vh 0 0;
         background-color: $blue;
         .lien_Menu {
             @include flex(row, flex-end, end);
+            padding: 14px;
             li {
                 margin-right: 5vh;
                 font-size: 2vh;
             }
             li:hover {
                 color: $orange;
+                font-size: 25px;
             }
         }
+        .burger_menu {
+            width: 100%;
+            // display: none;
+        }
+    }
+    #stickyNav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 5vh 10vh 0 0;
+        background-color: $blue;
     }
 
+
 }
+
+
+
+  
+
+
+  
