@@ -20,7 +20,8 @@ typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile en f
 
   $(".lien_Menu_Responsive").hide();
     $(".menu_Burger").click(function() {
-    $(".lien_Menu_Responsive").slideToggle("slow");
+    $(".lien_Menu_Responsive").slideDown("slow"),
+    $(".lien_Menu_Responsive").slideUp("slow"),
     });
   
   // Fonction pour le scrolling de la navbar 
