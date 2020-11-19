@@ -21,10 +21,9 @@ typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile en f
   $(".lien_Menu_Responsive").hide();
     $(".menu_Burger").click(function() {
     $(".lien_Menu_Responsive").slideDown("slow"),
-    $(".lien_Menu_Responsive").slideUp("slow"),
+    $(".lien_Menu_Responsive").slideUp("slow");
     });
   
-  // Fonction pour le scrolling de la navbar 
 
 
 
@@ -32,7 +31,7 @@ typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile en f
   // Fonction pour afficher dans un alert dès qu'on click sur Envoyer
 
     $(".inputBtn").click(function () { 
-      alert("Votre message a bien été envoyé !");
+      alert("L'envoi de message n'est pas encore disponible. Merci de me contacter par mail : cindy.blanc.1006@gmail.com");
       
     }); 
  
