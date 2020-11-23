@@ -15,18 +15,6 @@ typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile en f
 
 
 
-    // Fonction pour la navbar responsive 
-
-
-  $(".lien_Menu_Responsive").hide();
-    $(".menu_Burger").click(function() {
-    $(".lien_Menu_Responsive").slidetoggle("slow")
-    });
-  
-
-
-
-
   // Fonction pour afficher dans un alert dès qu'on click sur Envoyer
 
     $(".inputBtn").click(function () { 
