@@ -13,7 +13,9 @@ typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile en f
     .deleteAll()
     .start();
 
-
+    $(".down").on('click', function() {
+      $(".lien_Menu_Responsive").slideUp("slow");
+    })
 
   // Fonction pour afficher dans un alert dès qu'on click sur Envoyer
 
