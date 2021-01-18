@@ -8,7 +8,7 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile en formation.')
+typewriter.typeString('Je suis Cindy Blanc, Développeuse Web et Web Mobile junior.')
     .pauseFor(2500)
     .deleteAll()
     .start();
